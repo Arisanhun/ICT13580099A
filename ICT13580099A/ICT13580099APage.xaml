@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ICT13580099A"
+    x:Class="ICT13580099A.ICT13580099APage"
+    BackgroundColor="#88BBDD"
+    Padding="10,20,30,40">
+    <StackLayout
+        BackgroundColor="#CCFFFF"
+        Orientation="Vertical">
+        <Label
+            Text="Arisa"
+            BackgroundColor="#FFDDDD"
+            TextColor="Black"
+            LineBreakMode="TailTruncation"
+            x:Name="firstNamelabel" />
+        <Label
+            Text="Detsamran"
+            BackgroundColor="#FFFFDD"
+            x:Name="lastNameLabel" />
+        <Entry
+            Placeholder="Input Name"
+            Keyboard="Text"
+            x:Name="firstNameEntry" />
+        <Button
+            Text="OK"
+            BackgroundColor="#88DDBB"
+            x:Name="okBotton" />
+        <DatePicker />
+        <TimePicker />
+        <Picker
+            x:Name="genderPicker"
+            Title="กรุณาเลือกเพศ" />
+        <Label
+            x:Name="valueLabel" />
+        <Slider
+            Maximum="100"
+            Minimum="0"
+            Value="50"
+            x:Name="mySlider" />
+        <Stepper
+            Maximum="100"
+            Minimum="0"
+            Value="50"
+            x:Name="myStepper" />
+        <Switch
+            IsToggled="true" />
+        <Image
+            Source="Mickey_Mouse (1)"
+            HeightRequest="100" />
+       <WebView
+            Source="https://youtube.com"
+            HeightRequest="150"
+        />
+    </StackLayout>
+</ContentPage>
